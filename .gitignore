@@ -10,3 +10,13 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/01Java/05Poo/Poo/nbproject/private/
+/01Java/05Poo/Poo/build/
+/01Java/08Ejercicio/08Ejercicio_modular/nbproject/private/
+/01Java/08Ejercicio/08Ejercicio_modular/build/
+/01Java/08Ejercicio/reto27/nbproject/private/
+/01Java/08Ejercicio/reto27/build/
+/01Java/09Exception/09Exception/build/
+/01Java/09Exception/09Exception/nbproject/private/
+/01Java/10Archivos/archivos/nbproject/private/
+/01Java/11FuncionesLamda/11FuncionesLamda/nbproject/private/

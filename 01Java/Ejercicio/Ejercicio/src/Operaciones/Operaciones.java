@@ -9,10 +9,6 @@ package Operaciones;
  *
  * @author ga.gutierrez
  */
-
-
-
-
 public class Operaciones {
 
     int suma;
@@ -20,7 +16,7 @@ public class Operaciones {
 
     public int suma(int a[]) {
         for (int i = 0; i < a.length; i++) {
-            suma = a[i];
+            suma += a[i]; // suma = suma o suma+=
         }
         return suma;
     }
@@ -31,24 +27,23 @@ public class Operaciones {
     }
 
     public int mayor(int a[]) {
-       for (int i = 0; i < a.length; i++) {
-           
-          if (i ==0) {
-              mayor = a[i];
-          } 
-        
-          if (mayor < a[i]){
-          
-              mayor= a[i];
-          }
-          
-          
-       } 
-       
-       return  mayor;
+        for (int i = 0; i < a.length; i++) {
+
+            if (i == 0) {
+                mayor = a[i];
+            }
+
+            if (mayor < a[i]) {
+
+                mayor = a[i];
+            }
+
+        }
+
+        return mayor;
     }
 
-    
-    public  Operaciones() {}
-    
+    public Operaciones() {
+    }
+
 }

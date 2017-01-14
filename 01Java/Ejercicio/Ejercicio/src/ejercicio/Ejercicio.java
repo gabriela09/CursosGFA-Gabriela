@@ -41,8 +41,8 @@ public class Ejercicio {
             case 2:
                 System.out.println("La media es:" + ope.media(array));
                 break;
-            case 3 :
-                System.out.println("El numero mayor es "+ ope.mayor(array));
+            case 3:
+                System.out.println("El numero mayor es " + ope.mayor(array));
                 break;
         }
 
