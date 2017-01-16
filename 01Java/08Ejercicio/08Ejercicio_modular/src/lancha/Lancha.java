@@ -5,13 +5,32 @@
  */
 package lancha;
 
+import com.sun.corba.se.spi.orb.Operation;
+import pkg08ejercicio_modular.Operaciones;
+
 /**
  *
  * @author ga.gutierrez
  */
-public class Lancha extends vehiculo.Vehiculo {
+public class Lancha extends vehiculo.Vehiculo implements Operaciones{
    private String tipoMadera;
    private  int numeroVelas;
+
+    public String getTipoMadera() {
+        return tipoMadera;
+    }
+
+    public void setTipoMadera(String tipoMadera) {
+        this.tipoMadera = tipoMadera;
+    }
+
+    public int getNumeroVelas() {
+        return numeroVelas;
+    }
+
+    public void setNumeroVelas(int numeroVelas) {
+        this.numeroVelas = numeroVelas;
+    }
    
    public void flotarLachar(){}
    
@@ -34,6 +53,25 @@ public class Lancha extends vehiculo.Vehiculo {
     public void frenaVehiculo() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public Operaciones Registra() {
+      return this;
+    }
+
+    @Override
+    public int ObtieneID() {
+     return  getId_vehiculo();
+    }
+    
+     public String toString(){
+     return  " \n Vehiculo ID: " +getId_vehiculo() + " \n " +
+              "Capacidad gas:" +getCapacidad_gas()  + " \n " +
+              "Numero asientos:" +getNum_asientos() + " \n " +
+              "Numero llantas:" +getNum_llantas() + " \n " +
+              "Tipo de madera:" +getTipoMadera() + " \n " +
+              "Numero de velas:" +getNumeroVelas() + " \n " ;
+     }
 
     
 }

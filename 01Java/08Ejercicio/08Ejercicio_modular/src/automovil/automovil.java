@@ -1,5 +1,7 @@
 package automovil;
 
+import pkg08ejercicio_modular.Operaciones;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,7 +12,7 @@ package automovil;
  *
  * @author ga.gutierrez
  */
-public class automovil  extends vehiculo.Vehiculo{
+public class automovil  extends vehiculo.Vehiculo implements Operaciones{
    
     private int num_puertas;
     private int num_cilindros;
@@ -66,6 +68,30 @@ public class automovil  extends vehiculo.Vehiculo{
     @Override
     public void frenaVehiculo() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override  // Retoranara un objeto de tipo auromovil 
+    public Operaciones Registra() {
+        return this;
+       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+ public String toString(){
+    return  " \n Vehiculo ID: " +getId_vehiculo() + " \n " +
+              "Capacidad gas:" + getCapacidad_gas()  + " \n " +
+              "Numero asientos:" + getNum_asientos() + " \n " +
+              "Numero llantas:" + getNum_llantas() + " \n " +
+              "Numero puertas:" + getNum_puertas() + " \n " +
+              "Numero cilindros:" + getNum_cilindros() + " \n " +
+              "Reproductor de sonido:" + getReproductor_Sonido() + " \n " ;
+      
+        
+    }
+
+    @Override
+    public int ObtieneID() {
+        return  getId_vehiculo();
+    
     }
     
     
