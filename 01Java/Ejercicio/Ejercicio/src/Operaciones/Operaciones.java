@@ -16,7 +16,11 @@ public class Operaciones {
 
     public int suma(int a[]) {
         for (int i = 0; i < a.length; i++) {
+<<<<<<< HEAD
             suma += a[i]; // suma = suma o suma+=
+=======
+            suma += a[i];
+>>>>>>> b1b311a97ec518af58712a1604bab33325ba90e1
         }
         return suma;
     }
