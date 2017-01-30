@@ -109,6 +109,7 @@ public class Error implements Escribible {
               this.descripcion =sl[2];
               return this; // retorna el objeto 
             }
+            
         } 
         
         }
